@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+import "graph.proto";
+
+package transport_catalogue;
+
+message StopVertexId {
+    string stop = 1;
+    uint32 vertex_id = 2;
+}
+
+message EdgeExtraInfo {
+    string bus_name = 1;
+    int32 span_count = 2;
+}
+
+message TransportRouterData {
+    Graph graph = 1;
+    Router router = 2;
+    repeated StopVertexId stop_vertex_id = 3;
+    repeated EdgeExtraInfo edges_extra_info = 4;
+    double bus_wait_time = 5;
+}
