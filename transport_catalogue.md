@@ -186,7 +186,7 @@
 
 {
 
-`  `"serialization\_settings": { ... },
+`  "serialization\_settings": { ... },`
 
 `  `"stat\_requests": [ ... ]
 
